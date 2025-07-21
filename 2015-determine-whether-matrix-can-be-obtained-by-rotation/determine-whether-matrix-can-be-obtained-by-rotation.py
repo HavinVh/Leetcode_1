@@ -5,7 +5,7 @@ class Solution(object):
         :type target: List[List[int]]
         :rtype: bool
         """
-        mat1=mat
+        
         for k in range(4):
             for i in range(0,len(mat)):#transpose of the matrix
                 for j in range(i,len(mat)):
