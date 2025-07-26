@@ -7,7 +7,7 @@ class Solution(object):
         """
         nums.sort()
         a,b=0,k-1
-        s=float(10**6)
+        s=float("inf")
         while b<len(nums):
             s=min(s,nums[b]-nums[a])
             a,b=a+1,b+1
