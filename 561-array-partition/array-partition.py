@@ -5,13 +5,9 @@ class Solution(object):
         :rtype: int
         """
         nums.sort()
-        i=0
-        j=1
         s=0
-        while j<len(nums):
-            
-            s=s+min(nums[i],nums[j])
-            i+=2
-            j+=2
-        return s
+        for i in range(0,len(nums),2):
+            s+=nums[i]
 
+        return s
+        
